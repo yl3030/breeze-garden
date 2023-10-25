@@ -83,4 +83,10 @@ function sendEmail(){
     );
 }
 
+$(".life_pic").click(function(){
+    $(".map-popup").fadeIn(300).css("display","flex");
+})
 
+$(".map-popup").click(function(){
+    $(this).fadeOut(300);
+})

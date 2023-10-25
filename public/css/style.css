@@ -595,6 +595,11 @@ main {
           animation: float 3s ease-in-out infinite alternate;
 }
 
+.vvip .swiper-button-next, .vvip .swiper-button-prev {
+  top: inherit;
+  bottom: 35px;
+}
+
 @media screen and (max-width: 1199px) {
   .vvip_text .title {
     font-size: 30px;
@@ -642,6 +647,12 @@ main {
   }
   .vvip_pic {
     width: 100%;
+  }
+  .vvip .swiper-button-next, .vvip .swiper-button-prev {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    bottom: inherit;
   }
 }
 
@@ -997,6 +1008,7 @@ main {
 
 .life_pic {
   width: 70%;
+  cursor: pointer;
 }
 
 .life_pic > img {
@@ -1096,7 +1108,7 @@ main {
 }
 
 .brand_slogan {
-  width: 45vw;
+  width: 45%;
 }
 
 .brand_subtitle {
@@ -1241,6 +1253,7 @@ main {
 .reserve {
   padding-bottom: 160px;
   position: relative;
+  padding: 0 30px 160px;
 }
 
 .reserve .slogan {
@@ -1630,5 +1643,30 @@ main {
     position: static;
     opacity: 1;
   }
+}
+
+.map-popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  cursor: pointer;
+  display: none;
+}
+
+.map-popup > img {
+  width: 55%;
 }
 /*# sourceMappingURL=style.css.map */
