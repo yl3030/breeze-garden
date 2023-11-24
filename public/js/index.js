@@ -70,7 +70,7 @@ var swiperSun = new Swiper(".sun_swiper", {
 function sendEmail(){
     Email.send({
         SecureToken: "8207c7d7-4a6c-4797-870d-d16ee71023ce",
-        To : "zhulixdesign@gmail.com, zhuli705098@gmail.com, isly52033@gmail.com, yl301114@gmail.com",
+        To : "zhulixdesign@gmail.com, zhuli705098@gmail.com, isly52033@gmail.com",
         From : "walayydesign@gmail.com",
         Subject : "微風莊園預約賞屋",
         Body : "姓名:" + document.getElementById("name").value
